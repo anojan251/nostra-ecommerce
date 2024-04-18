@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <!-- my style sheet -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <title>Collection</title>
+</head>
+
+<body>
+    <!-- sign up text -->
+
+    <section id="topBannerAd" class=" bg-gray-900 text-white flex justify-center gap-5 ">
+        <p>Sign up and <strong>GET 20% OFF</strong> for your first order</p>
+        <p id="topBannerCloseBtn" class="cursor-pointer">x</p>
+    </section>
+
+    <!-- Navbar -->
+    <section class="flex justify-between bg-white text-gray-800 shadow-xl">
+        <div class="font-extrabold text-4xl pl-4 items-center">
+            <h1 id="nostra">Nostra</h1>
+        </div>
+        <div class="hidden gap-4 items-center text-xl pr-4 md:flex">
+            <a href="index.html">Home</a>
+            <a href="#new-arrival">New Arrival</a>
+            <a href="#most-wanted">Most Wanted</a>
+            <a>Collectons</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+        <div id="humburger" class="w-10 md:hidden p-2 cursor-pointer"><img src="icons/menu.png" alt=""></div>
+    </section>
+    <!-- mobile Menu -->
+    <div id="mobileMenu" class=" bg-gray-800 text-white absolute z-50 h-full w-1/2 top-0 -left-1/2">
+        <div id="closeSidenav" class="p-2 text-right cursor-pointer">
+            <p>X</p>
+        </div>
+        <div class="p-3"><a href="index.html">Home</a></div>
+        <div class="p-3"><a href="#new-arrival">New Arrival</a></div>
+        <div class="p-3"><a href="#most-wanted">Most Wanted</a></div>
+        <div class="p-3"><a href="collections.html">Collectons</a></div>
+        <div class="p-3"><a href="contact.html">Contact Us</a></div>
+    </div>
+<!-- page content -->
+    <section class="md:m-5 flex justify-center">
+
+<!-- making a divider/vertical line between product and checkbox using border right black -->
+        <div class="mt-12 pr-5 pl-3 md:pr-20 border-black border-r-4 ">
+            <h1 class="text-2xl font-extrabold mb-6">Occations</h1>
+            <div>
+                <input type="checkbox" name="occation" id="" value="summer"> Summer<br>
+                <input type="checkbox" name="occation" id="" value="party"> Party<br>
+                <input type="checkbox" name="occation" id="" value="beach"> Beach
+            </div>
+            <h1 class="text-2xl font-extrabold mb-6 mt-10">Color</h1>
+            <div>
+                <input type="checkbox" name="color" id=""> Red<br>
+                <input type="checkbox" name="color" id=""> Blue<br>
+                <input type="checkbox" name="color" id=""> White
+            </div>
+
+        </div>
+
+        <div class="ml-6">
+            <!-- searchbar -->
+            <div class="mt-12 border border-black rounded-lg p-1 h-fit flex justify-between"><input id="search" class="focus:outline-none w-20 md:w-full" type="search" name="" id="" placeholder="Search"><img class="w-6"
+                    src="icons/magnifying-glass.png" alt="">
+            </div>
+            <!-- here is where the products will be dispalying -->
+            <div id="productsList" class="productDisplay">
+            </div>
+        </div>
+
+        
+
+    </section>
+    <!-- newsletter -->
+    <section class="text-center mt-28">
+        <h1 class="font-extrabold text-3xl mb-4">Join our news letter</h1>
+        <p>Sign up for our email newspaper to get exclusive discounts, updates, and more</p>
+        <input class=" border-black border-2 w-1/3 mt-4" type="text" name="" id=""><br>
+        <button class="bg-black text-white p-1 rounded mt-5">Subscribe <i class="fa-solid fa-arrow-right"
+                style="color: #ffffff;"></i></button>
+
+    </section>
+    <!-- footer -->
+    <section class="bg-gray-900 mt-10 p-10">
+        <h1 class="font-extrabold text-white text-3xl">Nostra</h1>
+        <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum harum porro quod. Obcaecati
+            vitae reprehenderit sed laboriosam cum temporibus magni!</p>
+
+
+          
+
+    </section>
+
+    <script>
+        let topBannar = document.getElementById("topBannerAd")
+let topBannarCloseButton = document.getElementById("topBannerCloseBtn")
+
+
+topBannarCloseButton.addEventListener("click",function(){
+    topBannar.style.display="none"
+})
+
+        const products = [
+    {
+        id:1,
+        name:"Floral Summer Shirt",
+        src:"products/f1.jpg",
+        desc:"",
+        price:220,
+        tags:["new","blue","summer"]
+    },
+
+    {
+        id:2,
+        name:"Summer Green",
+        src:"products/f2.jpg",
+        desc:"",
+        price:260,
+        tags:["new","green","beach"]
+    },
+
+    {
+        id:3,
+        name:"Party Floral Shirt",
+        src:"products/f3.jpg",
+        desc:"",
+        price:399,
+        tags:["old","red","party"]
+    },
+
+    {
+        id:4,
+        name:"Pink Summer Shirt",
+        src:"products/f4.jpg",
+        desc:"",
+        price:399,
+        tags:["old","white","beach"]
+    },
+    {
+        id:5,
+        name:"Beach Shirt",
+        src:"products/f5.jpg",
+        desc:"",
+        price:579,
+        tags:["old","white","beach"]
+    }
+,
+    {
+        id:6,
+        name:"Shirt Party Red",
+        src:"products/f6.jpg",
+        desc:"",
+        price:579,
+        tags:["old","red","party"]
+    },
+
+    {
+        id:7,
+        name:"Party three Quater",
+        src:"products/f7.jpg",
+        desc:"",
+        price:399,
+        tags:["old","red","party"]
+    },
+    {
+        id:8,
+        name:"Blouse Party purple",
+        src:"products/f8.jpg",
+        desc:"",
+        price:579,
+        tags:["old","red","party"]
+    },
+    {
+        id:9,
+        name:"Blue Shirt",
+        src:"products/n1.jpg",
+        desc:"",
+        price:220,
+        tags:["new","blue","summer"]
+    },
+    {
+        id:9,
+        name:"Formal Summer Shirt",
+        src:"products/n2.jpg",
+        desc:"",
+        price:220,
+        tags:["new","blue","summer"]
+    },
+    {
+        id:9,
+        name:"Floral white Shirt",
+        src:"products/n3.jpg",
+        desc:"",
+        price:220,
+        tags:["new","blue","summer"]
+    },
+    {
+        id:9,
+        name:"texture Shirt",
+        src:"products/n4.jpg",
+        desc:"",
+        price:220,
+        tags:["new","blue","summer"]
+    },
+    {
+        id:9,
+        name:"Dennim Summer Shirt",
+        src:"products/n5.jpg",
+        desc:"",
+        price:220,
+        tags:["new","blue","summer"]
+    },
+    {
+        id:9,
+        name:"Floral Summer Shorts",
+        src:"products/n6.jpg",
+        desc:"",
+        price:220,
+        tags:["new","blue","summer"]
+    },
+    {
+        id:9,
+        name:"Floral brown Shirt",
+        src:"products/n7.jpg",
+        desc:"",
+        price:220,
+        tags:["new","blue","summer"]
+    },
+    {
+        id:9,
+        name:"Navy Blue Shirt",
+        src:"products/n8.jpg",
+        desc:"",
+        price:220,
+        tags:["new","blue","summer"]
+    },
+
+
+
+]
+// dispalying the product using ID
+const div = document.getElementById("productsList");
+    for(let i = 0; i < products.length; i++) {
+        div.innerHTML += "<div class='productCard'><img src='" + products[i].src + "'><h1>" + products[i].name + "</h1><h3>$" + products[i].price + "</h3></div>";
+    }
+// SearchBoxScript
+    let searchBox = document.getElementById("search")
+    let productContainer = document.getElementById("productsList")
+    var eachProduct = productContainer.querySelectorAll("div")
+    console.log(eachProduct)
+    
+    searchBox.addEventListener("keyup",function(){
+    
+    var eneterdTxt = event.target.value.toUpperCase()
+
+     for(i=0;i<eachProduct.length;i++){
+
+       
+           var itemNames = eachProduct[i].querySelector("h1").textContent
+           
+           if(itemNames.toUpperCase().indexOf(eneterdTxt)<0)
+           
+           {
+           eachProduct[i].style.display= "none"
+           }   
+
+
+           else{        eachProduct[i].style.display= "block"
+           }
+   
+       }
+})
+// checkboxfunction
+
+let selectOccations = document.getElementsByName("occation")
+let occationArray = []
+let checkBoxText
+for (j=0;j<3;j++){
+    selectOccations[j].addEventListener("click",function(){
+        if(event.target.checked){
+            occationArray.push(event.target.value)
+           
+            checkBoxText.textContent = occationArray
+            console.log(checkBoxText.textContent)
+           
+           
+            
+            
+        }
+        // else{
+        //     let index = occationArray.indexOf(event.target.value)
+        //     occationArray.splice(index,1)
+        //     console.log(occationArray)
+
+        // }
+       
+    })
+}
+
+// Iterate over each product in the array
+products.forEach(product => {
+    // Access the tags property of each product
+    const tags = product.tags;
+    // Convert the array of tags into a string
+    const tagsString = tags.join(", ");
+    // Log or do something with the tags string
+    console.log(tagsString);
+});
+    </script>
+    
+</body>
+
+</html>

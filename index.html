@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+<!-- my style sheet -->
+    <link rel="stylesheet" href="style.css">
+    <title>Welcome to Nostra</title>
+</head>
+
+<body>
+    <!-- sign up text -->
+
+    <section id="topBannerAd" class=" bg-gray-900 text-white flex justify-center gap-5 ">
+        <p>Sign up and <strong>GET 20% OFF</strong> for your first order</p>
+        <p id="topBannerCloseBtn" class="cursor-pointer">x</p>
+    </section>
+
+    <!-- Navbar -->
+    <section class="flex justify-between bg-white text-gray-800 shadow-xl">
+        <div class="font-extrabold text-4xl pl-4 items-center">
+            <h1 id="nostra">Nostra</h1>
+        </div>
+        <div class="hidden gap-4 items-center text-xl pr-4 md:flex">
+            <a href="index.html" >Home</a>
+            <a href="#new-arrival">New Arrival</a>
+            <a href="#most-wanted">Most Wanted</a>
+            <a href="collections.html">Collectons</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+        <div id="humburger" class="w-10 md:hidden p-2 cursor-pointer"><img src="icons/menu.png" alt=""></div>
+    </section>
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class=" bg-gray-800 text-white absolute z-50 h-full w-1/2 top-0 -left-1/2">
+        <div id="closeSidenav" class="p-2 text-right cursor-pointer"><p>X</p></div>
+        <div class="p-3"><a href="index.html">Home</a></div>
+        <div class="p-3"><a href="#new-arrival">New Arrival</a></div>
+        <div class="p-3"><a href="#most-wanted">Most Wanted</a></div>
+        <div class="p-3"><a href="collections.html">Collectons</a></div>
+        <div class="p-3"><a href="contact.html">Contact Us</a></div>  
+    </div>
+    
+    <!-- slideshow -->
+    <section class="flex rounded justify-center mt-9 m-2">
+        <div class="imageContainer overflow-hidden flex relative">
+
+            <div class="absolute rounded text-center ml-20 top-10 text-2xl md:top-60 md:left-16 z-20 ">
+
+                <h1 class="font-extrabold md:text-8xl text-white mb-3">Level Up style with our</h1>
+
+                <div class="flex justify-between ">
+
+                    <img id="leftArrow" class="chevron chevron-left w-3 md:w-10 cursor-pointer"
+                        src="icons/chevron-left-solid.svg" alt="">
+                    <div>
+                        <h4 class="font-extrabold text-base md:text-2xl text-white md:mb-4">Summer Collection</h4>
+                        <button class="bg-white rounded text-xs p-1">Shop now</button>
+                    </div>
+                    <img id="rightArrow" class="chevron chevron-right w-3 md:w-10 cursor-pointer"
+                        src="icons/chevron-right-solid.svg" alt="">
+
+
+                </div>
+            </div>
+
+            <img class="rounded" id="imgOne" src="slideShowImages/1.png" alt="">
+            <img class="rounded" id="imgTwo" src="slideShowImages/2.png" alt="">
+            <img class="rounded" id="imgThree" src="slideShowImages/3.png" alt="">
+            <img class="rounded" id="imgFour" src="slideShowImages/4.png" alt="">
+
+            <div class="rounded bg-gray-800 w-full h-full z-10 absolute opacity-40">
+            </div>
+
+        </div>
+
+
+    </section>
+
+    <script src="script.js"></script>
+    <!-- barands Section -->
+    <section>
+        <h1 class="text-3xl font-bold p-2">Brands</h1>
+        <div class="flex justify-between p-2 text-center">
+            <div class="w-6 md:w-16"><img src="icons/cougar.png" alt="">
+                <p>Puma</p>
+            </div>
+            <div class="w-6 md:w-16"><img src="icons/adidas.png" alt="">
+                <p>Adidas</p>
+            </div>
+            <div class="w-6 md:w-16"><img src="icons/simple.png" alt="">
+                <p>Simple</p>
+            </div>
+            <div class="w-6 md:w-16"><img src="icons/two-leaves.png" alt="">
+                <p>Leaves</p>
+            </div>
+            <div class="w-6 md:w-16"><img src="icons/behance.png" alt="">
+                <p>behance</p>
+            </div>
+            <div class="w-6 md:w-16"><img src="icons/twitch.png" alt="">
+                <p>Twitch</p>
+            </div>
+            <div class="w-6 md:w-16"><img src="icons/letter-m.png" alt="">
+                <p>Maker</p>
+            </div>
+
+        </div>
+    </section>
+    <section class="flex justify-between p-3">
+        <div>
+            <h1 class="text-3xl font-bold">We Provide Best Customer Experience</h1>
+        </div>
+        <div>
+            We ensure that our customer have the bst shopping experience
+        </div>
+    </section>
+    <section class="gap-3 p-3 md:flex">
+        <div class="bg-gray-300 p-3 mb-2">
+            <img class="w-6" src="icons/check-mark.png" alt="">
+            <h3 class="font-bold">original product</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi tenetur, sint aut est libero reiciendis.
+            </p>
+        </div>
+        <div class="bg-gray-300 p-3 mb-2">
+            <img class="w-6" src="icons/happiness.png" alt="">
+            <h3 class="font-bold">Sastification Guarantee</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi tenetur, sint aut est libero reiciendis.
+            </p>
+        </div>
+        <div class="bg-gray-300 p-3 mb-2">
+            <img class="w-6" src="icons/new-arrival.png" alt="">
+            <h3 class="font-bold">New Arrival Everyday</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi tenetur, sint aut est libero reiciendis.
+            </p>
+        </div>
+        <div class="bg-gray-300 p-3 mb-2">
+            <img class="w-6" src="icons/free-shipping.png" alt="">
+            <h3 class="font-bold">Fast & Free Shipping</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi tenetur, sint aut est libero reiciendis.
+            </p>
+        </div>
+    </section>
+    <!-- new Arrival section -->
+    <section id="new-arrival">
+
+    <h1 class="text-3xl font-bold m-4">New Arrivals</h1>
+
+    <div class="md:flex">
+
+        <div class="relative w-60 h-60 ml-auto mr-auto mb-5 md:ml-4">
+
+            <img src="collections/f1.jpg" alt="">
+            
+            <div class="rounded bg-gray-800 w-full h-full absolute bottom-0 opacity-20"></div>
+            <button class="absolute flex items-center rounded-lg bottom-16 left-16 bg-white p-2">Shop Now <img class="w-4" src="icons/right.png" alt=""></button>
+
+        </div>
+        <div class="relative w-60 h-60  ml-auto mr-auto mb-5">
+
+            <img src="collections/f2.jpg" alt="">
+            
+            <div class="rounded bg-gray-800 w-full h-full absolute bottom-0 opacity-20"></div>
+            <button class="absolute flex items-center rounded-lg bottom-16 left-16 bg-white p-2">Shop Now <img class="w-4" src="icons/right.png" alt=""></button>
+
+        </div>
+        <div class="relative w-60 h-60 ml-auto mr-auto mb-5">
+
+            <img src="collections/f3.jpg" alt="">
+            
+            <div class="rounded bg-gray-800 w-full h-full absolute bottom-0 opacity-20"></div>
+            <button class="absolute flex items-center rounded-lg bottom-16 left-16 bg-white p-2">Shop Now <img class="w-4" src="icons/right.png" alt=""></button>
+
+        </div>
+        <div class="relative w-60 h-60  ml-auto mr-auto mb-5  md:mr-4">
+
+            <img src="collections/f4.jpg" alt="">
+            
+            <div class="rounded bg-gray-800 w-full h-full absolute bottom-0 opacity-20"></div>
+            <button class="absolute flex items-center rounded-lg bottom-16 left-16 bg-white p-2">Shop Now <img class="w-4" src="icons/right.png" alt=""></button>
+
+        </div>
+    
+     
+
+                
+    </div>
+</section>
+<!-- Mostwanted section -->
+<section id="most-wanted">
+
+    <h1 class="text-3xl font-bold m-4">Most Wanted</h1>
+
+    <div class="md:flex">
+
+        <div class="relative w-60 h-60 ml-auto mr-auto mb-5 md:ml-4">
+
+            <img src="collections/n1.jpg" alt="">
+            <div class="rounded bg-gray-200 w-full h-full absolute bottom-0 opacity-20"></div>
+            <p class="absolute flex items-center rounded-lg top-0 left-0 pl-4 pr-4 bg-red-600 text-white">Sale</p>
+            <img class="absolute w-8 bottom-4 right-4" src="icons/heart.png" alt="">
+
+        </div>
+
+        <div class="relative w-60 h-60 ml-auto mr-auto mb-5 md:ml-4">
+
+            <img src="collections/n2.jpg" alt="">
+            <div class="rounded bg-gray-200 w-full h-full absolute bottom-0 opacity-20"></div>
+            <p class="absolute flex items-center rounded-lg top-0 left-0 pl-4 pr-4 bg-red-600 text-white">Sale</p>
+            <img class="absolute w-8 bottom-4 right-4" src="icons/heart.png" alt="">
+
+        </div>
+
+        <div class="relative w-60 h-60 ml-auto mr-auto mb-5 md:ml-4">
+
+            <img src="collections/n3.jpg" alt="">
+            <div class="rounded bg-gray-200 w-full h-full absolute bottom-0 opacity-20"></div>
+            <p class="absolute flex items-center rounded-lg top-0 left-0 pl-4 pr-4 bg-red-600 text-white">Sale</p>
+            <img class="absolute w-8 bottom-4 right-4" src="icons/heart.png" alt="">
+
+        </div>
+
+        <div class="relative w-60 h-60 ml-auto mr-auto mb-5 md:ml-4">
+
+            <img src="collections/n4.jpg" alt="">
+            <div class="rounded bg-gray-200 w-full h-full absolute bottom-0 opacity-20"></div>
+            <p class="absolute flex items-center rounded-lg top-0 left-0 pl-4 pr-4 bg-red-600 text-white">Sale</p>
+            <img class="absolute w-8 bottom-4 right-4" src="icons/heart.png" alt="">
+
+        </div>
+
+        <div class="relative w-60 h-60 ml-auto mr-auto mb-5 md:ml-4">
+
+            <img src="collections/n5.jpg" alt="">
+            <div class="rounded bg-gray-200 w-full h-full absolute bottom-0 opacity-20"></div>
+            <p class="absolute flex items-center rounded-lg top-0 left-0 pl-4 pr-4 bg-red-600 text-white">Sale</p>
+            <img class="absolute w-8 bottom-4 right-4" src="icons/heart.png" alt="">
+
+        </div>
+
+        <div class="relative w-60 h-60 ml-auto mr-auto mb-5 md:ml-4">
+
+            <img src="collections/n6.jpg" alt="">
+            <div class="rounded bg-gray-200 w-full h-full absolute bottom-0 opacity-20"></div>
+            <p class="absolute flex items-center rounded-lg top-0 left-0 pl-4 pr-4 bg-red-600 text-white">Sale</p>
+            <img class="absolute w-8 bottom-4 right-4" src="icons/heart.png" alt="">
+
+        </div>
+                  
+    </div>
+</section>
+<!-- Limited offer -->
+<div class="md:flex bg-gray-900 m-4 items-center">
+    <div><img class="md:m-6 mb-3" src="images/offer.jpg" alt=""></div>
+    
+    <div class="ml-4 p-5 md:flex-col md:ml-5">
+        <h1 class="text-5xl font-extrabold text-white">Limited Offer</h1>
+        <h3 class="text-2xl font-extrabold text-white">35% OFF on this for the first 30 Customer</h3>
+        <button class="flex items-center rounded-lg bottom-16 left-16 bg-white p-2">Shop Now <img class="w-4" src="icons/right.png" alt=""></button>
+
+    </div>
+</div>
+<div >
+    <a href="#nostra" class="bg-green-700 p-3 fixed bottom-2 right-2 rounded-lg">Top</a>
+</div>
+
+</section>
+<!-- footer -->
+<section class="bg-gray-900 mt-10 p-10">
+<h1 class="font-extrabold text-white text-3xl">Nostra</h1>
+<p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum harum porro quod. Obcaecati vitae reprehenderit sed laboriosam cum temporibus magni!</p>
+</section>
+<script src="script.js"></script>
+</body>
+
+</html>

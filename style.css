@@ -1,0 +1,33 @@
+*{
+    
+        font-family: "Poppins", sans-serif;
+        
+        font-style: normal;
+    
+      
+}.imageContainer{
+    
+    position: relative;   
+}
+html{
+    scroll-behavior: smooth;
+    
+}
+
+.productDisplay{
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.productCard{
+    width: 250px;
+    margin: 15px;
+}
+.productCard img{
+    border-radius: 10px;
+}
+.productCard h1{
+    font-weight: bolder;
+    font-size: large;
+}
